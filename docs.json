@@ -1,0 +1,156 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PURPS API",
+  "colors": {
+    "primary": "#3A49B8",
+    "light": "#4757CC",
+    "dark": "#3A49B8"
+  },
+  "favicon": "https://purps.lol/purps-mark.svg?v=2",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Start here",
+        "icon": "rocket",
+        "pages": [
+          "introduction",
+          "guides/signing",
+          "guides/errors-and-limits"
+        ]
+      },
+      {
+        "group": "Launch",
+        "icon": "sparkles",
+        "pages": [
+          "guides/launch-solana",
+          "guides/launch-pumpfun",
+          "guides/launch-robinhood",
+          "guides/redirect"
+        ]
+      },
+      {
+        "group": "After launch",
+        "icon": "settings-2",
+        "pages": [
+          "guides/manage",
+          "guides/trade"
+        ]
+      },
+      {
+        "group": "Coins",
+        "icon": "coins",
+        "pages": [
+          "reference/list-coins",
+          "reference/one-coin",
+          "reference/flat-index",
+          "reference/search",
+          "reference/launchpad-coins",
+          "reference/perp-markets",
+          "reference/launch-pairs"
+        ]
+      },
+      {
+        "group": "Launch on Solana",
+        "icon": "sun",
+        "pages": [
+          "reference/prepare-launch",
+          "reference/build-launch",
+          "reference/launch-status",
+          "reference/send-transaction",
+          "reference/transaction-status"
+        ]
+      },
+      {
+        "group": "Launch on pump.fun",
+        "icon": "flame",
+        "pages": [
+          "reference/pumpfun-prepare",
+          "reference/pumpfun-submit",
+          "reference/pumpfun-fees",
+          "reference/pumpfun-register"
+        ]
+      },
+      {
+        "group": "Redirect a pump.fun coin",
+        "icon": "corner-down-right",
+        "pages": [
+          "reference/redirect-check",
+          "reference/redirect-fees",
+          "reference/redirect-register"
+        ]
+      },
+      {
+        "group": "Launch on Robinhood Chain",
+        "icon": "feather",
+        "pages": [
+          "reference/robinhood-prepare",
+          "reference/robinhood-submit",
+          "reference/robinhood-launch",
+          "reference/robinhood-register-prepare",
+          "reference/robinhood-register-submit"
+        ]
+      },
+      {
+        "group": "Manage a coin",
+        "icon": "sliders-horizontal",
+        "pages": [
+          "reference/strategy-prepare",
+          "reference/strategy-submit",
+          "reference/payout-prepare",
+          "reference/payout-submit"
+        ]
+      },
+      {
+        "group": "Trade",
+        "icon": "arrow-left-right",
+        "pages": [
+          "reference/trade-solana",
+          "reference/trade-robinhood",
+          "reference/trade-robinhood-record"
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      { "label": "purps.lol", "href": "https://purps.lol" }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Create a coin",
+      "href": "https://purps.lol/create"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/buypurps",
+      "telegram": "https://t.me/buypurps"
+    }
+  },
+  "description": "Everything purps.lol can do, as JSON. No key, no signup.",
+  "logo": {
+    "light": "https://purps.lol/purps-icon.svg?v=2",
+    "dark": "https://purps.lol/purps-icon-light.svg?v=2",
+    "href": "https://purps.lol"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": false
+  },
+  "background": {
+    "color": {
+      "light": "#F2F1EF",
+      "dark": "#0E0F1A"
+    }
+  },
+  "fonts": {
+    "family": "Geist"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "codeblocks": "system"
+  }
+}

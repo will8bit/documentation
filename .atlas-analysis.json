@@ -1,0 +1,91 @@
+{
+  "projectType": "api-service",
+  "projectName": "PURPS API",
+  "projectDescription": "A no-key REST API for launching, managing, and trading meme coins across Solana, pump.fun, and Robinhood Chain, where trading fees are automatically routed to holder strategies such as buybacks, airdrops, and perpetual futures.",
+  "theme": "luma",
+  "primaryColor": "#7C3AED",
+  "lightColor": "#A78BFA",
+  "darkColor": "#5B21B6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "guides/signing",
+              "guides/errors-and-limits"
+            ]
+          },
+          {
+            "group": "Launching",
+            "pages": [
+              "guides/launch-solana",
+              "guides/launch-pumpfun",
+              "guides/launch-robinhood",
+              "guides/redirect"
+            ]
+          },
+          {
+            "group": "After Launch",
+            "pages": [
+              "guides/manage",
+              "guides/trade"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api-reference/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "No API keys — every write is authorized by a wallet signature",
+    "Non-custodial — private keys are never stored or transmitted",
+    "Launch coins on Solana (Meteora), pump.fun, or Robinhood Chain (Pons)",
+    "Automatic fee routing to holder strategies: buybacks, airdrops, perpetual futures",
+    "Redirect existing pump.fun coins to PURPS strategies",
+    "Trading on bonding curves and graduated pools across chains",
+    "Prepare-sign-submit pattern for all write operations",
+    "Self-completing launches — process can die after sending and launch still finalizes"
+  ],
+  "publicApiSurface": [
+    "GET /coins",
+    "GET /coins/{mint}",
+    "GET /pairs",
+    "GET /markets",
+    "POST /launches/prepare",
+    "POST /launches/submit",
+    "GET /launches/{mint}",
+    "POST /pumpfun/prepare",
+    "POST /pumpfun/submit",
+    "POST /pumpfun/fees",
+    "POST /redirects",
+    "GET /redirects/{mint}",
+    "POST /robinhood/launches/prepare",
+    "POST /robinhood/launches/submit",
+    "GET /robinhood/launches/{txHash}",
+    "POST /robinhood/register/prepare",
+    "POST /robinhood/register/submit",
+    "POST /coins/{mint}/strategy/prepare",
+    "POST /coins/{mint}/strategy/submit",
+    "POST /coins/{mint}/payout/prepare",
+    "POST /coins/{mint}/payout/submit",
+    "POST /trades/solana",
+    "POST /trades/robinhood",
+    "POST /trades/robinhood/record",
+    "POST /transactions/send",
+    "GET /transactions/{signature}"
+  ]
+}
